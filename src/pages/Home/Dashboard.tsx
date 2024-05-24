@@ -119,14 +119,14 @@ const Dashboard = () => {
         display: true,
         title: {
           display: true,
-          text: 'Songs',
+          text: 'Genres',
         },
       },
       y: {
         display: true,
         title: {
           display: true,
-          text: 'Genres',
+          text: 'Songs',
         },
       },
     },
