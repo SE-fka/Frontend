@@ -25,7 +25,7 @@ const SongList = () => {
     const fetchSongs = async () => {
       try {
         setIsLoading(true);
-        dispatch(loadSongs()); 
+        dispatch(loadSongs());
         setIsLoading(false);
       } catch (err) {
         setIsLoading(false);
@@ -152,6 +152,7 @@ const SongList = () => {
               </div>
             ))}
           </div>
+          
           {error ? (
             <div>
               {error.message && (
@@ -180,9 +181,10 @@ const SongList = () => {
                     <div className="col-md-12 col-lg-12 mb-6">
                       <div className="service-box d-flex">
                         <div className="service-icon mr-4">
-                          <small>
+                        <LoadingSpinner />
+                  {/*         <small>
                             Result Not Found
-                          </small>
+                          </small> */}
                         </div>
                       </div>
                     </div>
