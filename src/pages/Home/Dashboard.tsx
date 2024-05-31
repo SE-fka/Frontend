@@ -211,7 +211,7 @@ const Dashboard = () => {
         </div>
         <div className='col-md-12 col-lg-12 mb-3'>
         <hr />
-        <h5 style={{textAlign:'center', color:'#56B1FD'}}>Total Number of Songs and Albums in Each Artist s</h5>
+        <h5 style={{textAlign:'center', color:'#56B1FD'}}>Total Number of Songs and Albums in Each Artist </h5>
          <ResponsiveContainer width="100%" height={400}>
          <LineChart data={songAndAlbum}>
          <XAxis dataKey="artist"/> {/* label={{ value: 'Artist name',  position: 'bottom', offset: 0}}  */}
